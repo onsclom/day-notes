@@ -8,12 +8,11 @@ import Layout from "../Layout.astro";
     <h1>📝 day notes</h1>
     <p>a simple notes app</p>
 
-    <a href="/notes">use day notes</a>
+    <i>currently in progress, app coming soon</i>
 
     <h2>about</h2>
     <ul>
       <li>☯️ no manual organization needed, just start writing</li>
-      <li>📆 notes are automatically saved per day</li>
       <li>📖 read notes as a reverse chronological feed</li>
       <li>⚡️ fast, small, and works well on all devices</li>
       <li>💾 persists notes to your browser's local storage</li>
@@ -33,10 +32,11 @@ import Layout from "../Layout.astro";
     <h2>plans</h2>
     <p>
       a feature i really want is cross-device sync. unfortunately, this will
-      require some kind of account based auth stuff. maybe i'll do something
-      custom, or maybe i'll just use something like github gists to store notes.
-      not sure how i'll do this yet, but i definitely want the app to be
-      offline-first so it works even without an internet connection.
+      require some kind of account based auth stuff. maybe i'll just use
+      something like github gists' API, or maybe i'll do something more custom.
+      i'm not sure on the details yet. though i definitely want the app to be
+      offline-first so it works even without an internet connection, then syncs
+      if there is internet connection.
     </p>
     <p>
       besides that, i plan to dogfood the app for a bit and see what i end up
@@ -50,7 +50,7 @@ import Layout from "../Layout.astro";
   .demo-container {
     margin: 1rem;
     border: 1px solid #ccc;
-    height: 300px;
+    height: 400px;
   }
 
   main {
