@@ -52,9 +52,10 @@ Patience is key in life’s challenges.`.toLocaleLowerCase(),
   ]);
   const todaysNote = $derived(notes[0]!);
 
-  // @ts-ignore
   function withViewTransition(fn: () => void) {
+    // @ts-ignore
     if (!document.startViewTransition) fn();
+    // @ts-ignore
     document.startViewTransition(() => {
       fn();
     });
@@ -95,6 +96,11 @@ Patience is key in life’s challenges.`.toLocaleLowerCase(),
 </main>
 
 <style>
+  html,
+  body {
+    height: 100%;
+  }
+
   pre {
     font-size: medium;
     white-space: pre-wrap;
@@ -109,9 +115,9 @@ Patience is key in life’s challenges.`.toLocaleLowerCase(),
   }
 
   main {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   main > textarea {

@@ -9,11 +9,6 @@
     />
     <title>day notes</title>
     <style is:global>
-      html,
-      body {
-        height: 100%;
-      }
-
       body {
         font-family:
           Menlo,
@@ -22,14 +17,37 @@
           Liberation Mono,
           Lucida Console,
           monospace;
-
-        max-width: 60ch;
         margin: 0 auto;
+        color: #333;
+        line-height: 1.5;
+      }
+
+      main {
+        max-width: 60ch;
       }
 
       button {
         padding: 0.5rem;
         cursor: pointer;
+      }
+
+      textarea {
+        color: #333;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #222;
+          color: #eee;
+        }
+        textarea {
+          background: #333;
+          color: #eee;
+        }
+      }
+
+      a {
+        color: #77f;
       }
     </style>
   </head>
